@@ -13,7 +13,7 @@
     <div class="  bg-blue-50"><!--container-->
         <div class=""> <!--Logo & nav bar-->
             <header class="">
-                <nav class=" text-white grid grid-cols-8 bg-gray-800 p-2">
+                <nav class=" text-white grid grid-cols-8 bg-gray-800 p-2 sticky top-0">
                     <ul class="grid grid-cols-4 tracking-widest col-span-5">   
                         <li class="hover:text-secondary-200 uppercase">
                             <a href="" class="flex justify-center font-semibold">
@@ -37,7 +37,7 @@
                             </a>
                         </li>
                         <li class="hover:text-secondary-200 uppercase">
-                            <a href="" class="flex justify-center font-semibold">
+                            <a href="/public/booking.html" class="flex justify-center font-semibold">
                                 <svg class="w-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"></path></svg>
                                 <span class="">Bookings</span>
                             </a>
@@ -141,54 +141,81 @@
             </div>
 
 
+            <!-- Review Gallery-->
+            <div class="flex m-4 p-4 justify-around bg-gradient-to-r from-gray-700 to-transparent items-center relative">
+                <svg class="w-24 h-24 text-gray-900 cursor-pointer absolute top-1/2 left-2 z-10 bg-gray-700 bg-opacity-10 h-" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+
+                <div class="transform rotate-12 bg-white text-gray-700 shadow-md opacity-90 hidden md:block">
+                    <img src="/public/image/people_1.jpg" alt="" class="">
+                    <div class="p-4"> <span>Angelina</span><br> the food was so good!!</div>
+                    <img src="/public/image/pin.png" alt="" class="w-12 absolute -top-10 left-1/2 transform -rotate-12">
+                </div>
+                <div class="transform -rotate-12 bg-gray-800 text-white shadow-lg z-10">
+                    <img src="/public/image/people_2.jpg" alt="" class="">
+                    <div class="p-4"> <span>taylor</span><br> the food was so good!!</div>
+                    <img src="/public/image/pin.png" alt="" class="w-12 absolute -top-10 left-1/2 transform -rotate-12">
+                </div>
+                <div class="transform rotate-12 bg-gray-800 text-white shadow-md opacity-90">
+                    <img src="/public/image/people_3.jpg" alt="" class="">
+                    <div class="p-4"> <span>jollie</span><br> the food was so good!!</div>
+                    <img src="/public/image/pin.png" alt="" class="w-12 absolute -top-10 left-1/2 transform -rotate-12">
+                </div>
+
+                <svg class="w-24 h-24 text-gray-900 cursor-pointer absolute top-1/2 right-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+            </div>
 
 
 
 
 
 
-<!--gallery portion-->
-                <div class="mt-1">
-                    <div class="relative">
-                        <div class="h-2 border-t-4 border-gray-700 mr-0"></div>
-                        <span class="absolute -top-3 left-6 mx-1.5 px-3 text-2xl text-gray-700 font-semibold  uppercase bg-blue-50">Latest Recipes</span>
+
+
+
+
+
+            <!--gallery portion-->
+            <div class="mt-14">
+                <div class="relative">
+                    <div class="h-2 border-t-4 border-gray-700 mr-0"></div>
+                    <span class="absolute -top-3 left-6 mx-1.5 px-3 text-2xl text-gray-700 font-semibold  uppercase bg-blue-50">Latest Recipes</span>
+                </div>
+                <div class="mt-8 grid lg:grid-cols-3 gap-10">
+                    <!--cards go here-->
+                    <div class="rounded bg-white border-gray-200 overflow-hidden shadow-md relative  hover:shadow-lg cursor-pointer">
+                        <img src="image/stew.jpg" alt="stew" class="h-32 sm:h-48 w-full object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">5 Bean Chilli Stew</span>
+                            <span class="block text-gray-500 text-sm"> Recipe by Mario</span>
+                        </div>
+                        <div class="bg-secondary-100 text-secondary-200 text-xs uppercase font-bold rounded-full p-2 absolute top-0 ml-2 mt-2">
+                            <svg class="w-5 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            25mins
+                        </div>
                     </div>
-                    <div class="mt-8 grid lg:grid-cols-3 gap-10">
-                        <!--cards go here-->
-                        <div class="rounded bg-white border-gray-200 overflow-hidden shadow-md relative  hover:shadow-lg cursor-pointer">
-                            <img src="image/stew.jpg" alt="stew" class="h-32 sm:h-48 w-full object-cover">
-                            <div class="m-4">
-                                <span class="font-bold">5 Bean Chilli Stew</span>
-                                <span class="block text-gray-500 text-sm"> Recipe by Mario</span>
-                            </div>
-                            <div class="bg-secondary-100 text-secondary-200 text-xs uppercase font-bold rounded-full p-2 absolute top-0 ml-2 mt-2">
-                                <svg class="w-5 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                                25mins
-                            </div>
+                    <div class="rounded bg-white border-gray-200 overflow-hidden shadow-md relative hover:shadow-lg cursor-pointer">
+                        <img src="image/curry.jpg" alt="curry" class="h-32 sm:h-48 w-full object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">Curry</span>
+                            <span class="block text-gray-500 text-sm"> Recipe by Mario</span>
                         </div>
-                        <div class="rounded bg-white border-gray-200 overflow-hidden shadow-md relative hover:shadow-lg cursor-pointer">
-                            <img src="image/curry.jpg" alt="curry" class="h-32 sm:h-48 w-full object-cover">
-                            <div class="m-4">
-                                <span class="font-bold">Curry</span>
-                                <span class="block text-gray-500 text-sm"> Recipe by Mario</span>
-                            </div>
-                            <div class="bg-secondary-100 text-secondary-200 text-xs uppercase font-bold rounded-full p-2 absolute top-0 ml-2 mt-2">
-                                <svg class="w-5 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                                25mins
-                            </div>
-                        </div>
-                        <div class="rounded bg-white border-gray-200 overflow-hidden shadow-md relative hover:shadow-lg cursor-pointer">
-                            <img src="image/noodles.jpg" alt="noodles" class="h-32 sm:h-48 w-full object-cover">
-                            <div class="m-4">
-                                <span class="font-bold">Noodles</span>
-                                <span class="block text-gray-500 text-sm"> Recipe by Mario</span>
-                            </div>
-                            <div class="bg-secondary-100 text-secondary-200 text-xs uppercase font-bold rounded-full p-2 absolute top-0 ml-2 mt-2">
-                                <svg class="w-5 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                                25mins
-                            </div>
+                        <div class="bg-secondary-100 text-secondary-200 text-xs uppercase font-bold rounded-full p-2 absolute top-0 ml-2 mt-2">
+                            <svg class="w-5 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            25mins
                         </div>
                     </div>
+                    <div class="rounded bg-white border-gray-200 overflow-hidden shadow-md relative hover:shadow-lg cursor-pointer">
+                        <img src="image/noodles.jpg" alt="noodles" class="h-32 sm:h-48 w-full object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">Noodles</span>
+                            <span class="block text-gray-500 text-sm"> Recipe by Mario</span>
+                        </div>
+                        <div class="bg-secondary-100 text-secondary-200 text-xs uppercase font-bold rounded-full p-2 absolute top-0 ml-2 mt-2">
+                            <svg class="w-5 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            25mins
+                        </div>
+                    </div>
+                </div>
             </div>
 
 

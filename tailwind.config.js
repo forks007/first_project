@@ -14,15 +14,14 @@ module.exports = {
         }
       },
       fontFamily: {
-        dripping: ['Nosifer']
-      },
-      borderWidth:{
-        10: '10px',
+        sans: ['roboto']
       },
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      backgroundColor:['focus','active']
+    },
   },
   plugins: [require(' @tailwindcss/forms')],
 }

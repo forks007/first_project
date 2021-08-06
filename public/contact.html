@@ -6,67 +6,325 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="max-w-screen-xl mx-auto font-body">
-    <!-- nav bar-->
-    
-    
-    
-    <nav class=" text-white bg-gray-800 grid grid-cols-8 p-2 sticky top-0">
-        <ul class="grid grid-cols-4 tracking-widest col-span-5">   
-            <li class="hover:text-secondary-200 uppercase">
-                <a href="/public/index.html" class="flex justify-center font-semibold">
-                    <svg class="w-5  mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+<body class="max-w-screen-xl mx-auto">
+    <nav class="hidden sm:block text-gray-100 lg:grid lg:grid-cols-8 bg-gray-800 sticky top-0 z-50">
+        <ul class="font-semibold sm:grid grid-cols-4 tracking-tighter col-span-5 uppercase"
+            style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;">
+            <li class="hover:bg-gray-700 border-b-4 border-gray-900 hover:border-brown-200 hover:text-secondary-200">
+                <a href="/public/index.html" class="p-2 flex sm:justify-center">
+                    <svg class="w-5  mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6">
+                        </path>
+                    </svg>
                     <span class="">Home</span>
-                    
+
                 </a>
             </li>
-            <li class="hover:text-secondary-200 uppercase">
-                <a href="" class="flex justify-center font-semibold">
-                    <svg class="w-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
+            <li class="hover:bg-gray-700 border-b-4 border-gray-900 hover:border-brown-200 hover:text-secondary-200">
+                <a href="/public/about.html" class="pt-2 flex sm:justify-center">
+                    <svg class="w-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                            clip-rule="evenodd"></path>
+                    </svg>
                     <span class="">About Us</span>
-                    
+
                 </a>
             </li>
-            <li class="hover:text-secondary-200 uppercase">
-                <a href="" class="flex justify-center font-semibold">
-                    <svg class="w-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+            <li class="mt-1 sm:mt-0 border-b-4 border-brown-200 bg-gray-700 hover:text-secondary-200">
+                <a href="/public/contact.html" class="pt-2 flex sm:justify-center">
+                    <svg class="w-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
+                        </path>
+                    </svg>
                     <span class="">Contact</span>
-                    
+
                 </a>
             </li>
-            <li class="hover:text-secondary-200 uppercase">
-                <a href="/public/booking.html" class="flex justify-center font-semibold">
-                    <svg class="w-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"></path></svg>
+            <li class="hover:bg-gray-700 border-b-4 border-gray-900 hover:border-brown-200 hover:text-secondary-200">
+                <a href="/public/booking.html" class="pt-2 flex sm:justify-center">
+                    <svg class="w-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z">
+                        </path>
+                    </svg>
                     <span class="">Bookings</span>
                 </a>
-                    
-            </li>
-        </ul>
-        <ul class="flex col-span-3 justify-end"> <!--log in & sign up-->
-            <!-- <li class="">
-                <a href="" class="border-r-4 border-secondary-200">En</a><a href="" class="border-x-2">Bn</a>
-            </li> -->
-            
-            <li class="mx-2 px-2 uppercase tracking-wider hover:bg-gray-700  transition ease-out duration-500">
-                <a href="">Log In</a>
-            </li>
-            <li class="mx-2 px-2 uppercase tracking-wider hover:bg-gray-700  transition ease-out duration-500">
-                <a href="">Sign up</a>
-            </li>
-            
-        </ul>
-    </nav>
 
-    <div class="w-full h-96 bg-red-300 text-9xl">1
-        <div class="w-96 bg-yellow-300 h-96 text-9xl flex items-center justify-center sticky top-1">2
-            <div class="w-1/2 h-60 bg-green-600 text-9xl fixed">3</div>
+            </li>
+        </ul>
+
+        <ul class=" flex justify-center items-center lg:justify-end lg:col-span-3 ">
+
+            <li class="mx-2 px-3 py-2 rounded-full hover:bg-gray-500  uppercase tracking-wider transition ease-out duration-500 overflow-hidden">
+                <a href="" class="">Log In</a>
+            </li>
+            <li class="mx-2 px-3 py-2 rounded-full hover:bg-gray-500  uppercase tracking-wider transition ease-out duration-500 overflow-hidden">
+                <a href="/public/contact.html" class="">Sign up</a>
+            </li>
+
+        </ul>
+
+    </nav>
+    <!-- nav bar-->
+    
+    <div class="relative">
+        <div class="w-full h-3/5 object-center overflow-hidden">
+            <img src="/public/image/contact.jpg" alt="" class="opacity-50 object-cover">
         </div>
-    </div>
-    
-    <div class="w-96 h-96 text-9xl bg-yellow-100">4</div>
-    <div class="w-96 h-96 bg-blue-900 text-9xl ">5</div>
-    <div class="w-96 h-96 bg-indigo-300 text-9xl">6</div>
-    
+        <a href="" class="absolute top-3 w-52 md:right-3 xl:right-14 xl:w-80">
+            <img src="/public/image/logo.png" alt="" class="transform">
+        </a>
+        <div class=" uppercase font-roboto tracking-tight font-extrabold text-gray-800 text-center text-6xl absolute inset-0 top-44">join us at the table...</div>
+
+        <div class="absolute top-4 right-6 ">
+            <div class="sm:hidden flex justify-end">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 cursor-pointer" id="burger" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </div>
+
+
+            <div class="hidden mr-2 text-gray-100 bg-gray-500 opacity-90 rounded-lg overflow-hidden"
+                style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;"
+                id="menu">
+                <ul class="font-medium tracking-tighter uppercase">
+                    <li class="hover:text-gray-900  px-2 pt-2 hover:bg-gray-600 border-gray-900 hover:border-l-4">
+                        <a href="/public/index.html" class="flex">
+                            <svg class="w-5  mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6">
+                                </path>
+                            </svg>
+                            <span class="">Home</span>
+
+                        </a>
+                    </li>
+                    <li class="mt-1 hover:text-gray-900 px-2 hover:bg-gray-600">
+                        <a href="/public/about.html" class="flex">
+                            <svg class="w-5 mr-2" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="">About Us</span>
+
+                        </a>
+                    </li>
+                    <li class="mt-1 bg-gray-600 text-gray-50 hover:text-gray-900 border-l-4 border-brown-200 px-2 ">
+                        <a href="/public/contact.html" class="flex">
+                            <svg class="w-5 mr-2" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
+                                </path>
+                            </svg>
+                            <span class="">Contact</span>
+
+                        </a>
+                    </li>
+                    <li class="mt-1 hover:text-gray-900 px-2 hover:bg-gray-600">
+                        <a href="/public/booking.html" class=" flex">
+                            <svg class="w-5 mr-2" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z">
+                                </path>
+                            </svg>
+                            <span class="">Bookings</span>
+                        </a>
+
+                    </li>
+                </ul>
+
+                <ul
+                    class="mt-2 font-dripping tracking-tight flex justify-between bg-gray-900 border-t-2 border-white">
+
+                    <li class="p-1 uppercase hover:bg-gray-700  transition ease-out duration-500">
+                        <a href="" class="p-2 m-2">Log In</a>
+                    </li>
+                    <li class="p-1 uppercase hover:bg-gray-700  transition ease-out duration-500">
+                        <a href="/public/contact.html" class="p-2 m-2">Sign up</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            
+
+            
+        </div>
+        <section class="bg-yellow-100">
+            <div class=" m-4 p-8 text-center text-gray-900 bg-brown-200 bg-opacity-80 font-body">
+                <span class="m-2 p-2 font-semibold text-lg block">To contact the Forks restaurant, you can call by phone, send us an email, or complete the form below. We will respond to you as soon as possible.</span>
+
+                <span class="m-2 p-2 leading-8 uppercase text-gray-700 block text-sm font-semibold">If you are interested in working with us & become a honarary member of our community.
+                     complete the signup form.</span>
+                <span class="m-2 p-2 text-xl">To make your reservation,
+                    <a href="/public/booking.html" class="bg-yellow-200 uppercase text-sm font-bold transform hover:scale-105 "> click here </a>
+                    
+                <div class="m-8">
+                    <svg class="w-16 h-16 mx-auto" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                    <span class="capitalize font-bold m-2">email:</span><span class="tracking-wide font-semibold">forks@gmail.com</span>
+                </div>
+                <div class="m-8">
+                    <svg class="w-16 h-16 mx-auto" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+                    <span class="capitalize font-bold m-2">phone:</span><span class="tracking-wide font-semibold">+8800012345678</span>
+                </div>
+
+
+            </div>
+        </section>
+
+
+        <main class="relative grid md:grid-cols-7 lg:grid-cols-3">
+
+        <!--signup form-->
+
+            <div class="md:col-span-5 lg:col-span-2 m-2 p-4  bg-brown-100 bg-opacity-30 rounded-lg">
+                <span class="text-2xl uppercase tracking-tight font-semibold border-b-4 border-yellow-900 block"> sign up form</span>
+                <form action="">
+                    <div class="grid grid-cols-2 gap-4 grid-">
+                        <div>
+                            <input type="text" name="fname" id="fname" placeholder="first name" class="w-full border-0 border-b-4 border-brown-200 bg-transparent focus:outline-none focus:shadow-none focus:border-gray-900 focus:ring-0 italic capitalize">
+                            <label for="fname" class="font-roboto text-sm font-medium  focus:border-current  ">First Name</label>
+                            
+                        </div>
+                        <div>
+                            <input type="text" name="lname" id="lname" placeholder="last name" class="w-full border-0 border-b-4 border-brown-200 bg-transparent focus:outline-none focus:shadow-none focus:border-gray-900 focus:ring-0 italic capitalize">
+                            <label for="lname" class="font-roboto text-sm font-medium  focus:border-current ">Last Name</label>
+                            
+                        </div>
+                        <div>
+                            <input type="email" name="email" id="email" placeholder="enter email" class="w-full border-0 border-b-4 border-brown-200 bg-transparent focus:outline-none focus:shadow-none focus:border-gray-900 focus:ring-0 italic">
+                            <label for="email" class="font-roboto text-sm font-medium  focus:border-current ">Email</label>
+                            
+                        </div>
+                        <div>
+                            <input type="tel" name="cntctno" id="cntctno"
+                            placeholder="ex:+88012345678" class="w-full border-0 border-b-4 border-brown-200 bg-transparent focus:outline-none focus:shadow-none focus:border-gray-900 focus:ring-0 italic">
+                            <label for="cntctno" class="font-roboto text-sm font-medium  focus:border-current ">Contact No.</label>
+                            
+                        </div>
+
+                        <span class="capitalize text-sm font-medium block col-span-2 italic">choose a suitable username & password </span> 
+
+                        <div class="col-span-2">
+                            <input type="text" name="uname" id="uname" placeholder="username(eg:  forks-007)" class="w-full border-0 border-b-4 border-brown-200 bg-transparent focus:outline-none focus:shadow-none focus:border-gray-900 focus:ring-0 italic">
+                            <label for="uname" class="font-roboto text-sm font-medium block  focus:border-current ">User Name</label>
+                            
+                        </div>
+
+                        <div class="">
+                            <input type="password" name="pw" id="pw" placeholder="create password" class="w-full block border-0 border-b-4 border-brown-200 bg-transparent focus:outline-none focus:shadow-none focus:border-gray-900 focus:ring-0 italic">
+                            <label for="pw" class="font-roboto text-sm font-medium  focus:border-current ">Password</label>
+                            
+                        </div>
+                        <div class="">
+                            <input type="password" name="rpw" id="rpw" placeholder="confirm password" class="w-full block border-0 border-b-4 border-brown-200 bg-transparent focus:outline-none focus:shadow-none focus:border-gray-900 focus:ring-0 italic">
+                            <label for="rpw" class="font-roboto text-sm font-medium  focus:border-current ">Re-enter Password</label>
+                            
+                        </div>
+
+                        <span class="capitalize text-sm font-medium block col-span-2 italic">additional information</span>
+                        <div class="col-span-2 flex justify-around ">
+                            <div>
+                                <input type="radio" id="male" name="gender" value="male">
+                                <label for="male" class="font-roboto text-sm font-medium  focus:border-current capitalize ">male</label>
+                            </div>
+                            <div class="">
+                                <input type="radio" id="female" name="gender" value="female">
+                                <label for="female" class="font-roboto text-sm font-medium  focus:border-current capitalize ">female</label>
+                            </div>
+                        </div>
+                        <div class="mt-6">
+                            <input type="date" name="dob" id="dob" class="w-full block border-0 border-b-4 border-brown-200 bg-transparent focus:outline-none focus:shadow-none focus:border-gray-900 focus:ring-0 italic">
+                            <label for="dob" class="font-roboto text-sm font-medium  focus:border-current capitalize">date of birth</label>
+                            
+                        </div>
+                        <div>
+                            <textarea name="address" id="address" cols="" rows="" class="w-full block border-0 border-b-4 border-brown-200 bg-transparent focus:outline-none focus:shadow-none focus:border-gray-900 focus:ring-0 italic "> </textarea>
+                            <label for="address" class="font-roboto text-sm font-medium  focus:border-current  ">address </label>
+                            
+                        </div>
+                        <div class="col-span-2 flex justify-center"> 
+                            <button type="submit" class="w-32 py-2 font-semibold text-sm bg-brown-200 rounded-md tracking-wider uppercase cursor-pointer shadow-xl">
+                                sign up
+                            </button>
+                        </div>
+                        
+                        
+                    </div>
+                    
+                    
+
+
+                </form>
+
+            </div>
+            <div class="relative md:block w-full h-full md:col-span-2 lg:col-span-1 overflow-hidden">
+                <img src="/public/image/contact_2.jpg" alt="" class="w-full  h-full opacity-50 object-cover">
+                <div class=""></div>
+                <div class="absolute py-12 top-0 w-full font-banner bg-yellow-200 text-4xl uppercase text-center z-10">
+                    follow us
+                </div>
+
+                <div class="absolute top-44 w-full grid grid-cols-3">
+                    <div class="h-64 hover:bg-social-100 flex justify-center bg-yellow-100 rounded-b-lg ">
+                        <img src="/public/image/facebook_logo_3.png" alt="" class=" object-scale-down">
+                    </div>
+                    <div class="h-64 mt-32 hover:bg-social-200 flex justify-center bg-yellow-100 rounded-b-lg">
+                        <img src="/public/image/insta_logo_2.png" alt="" class="object-scale-down">
+                    </div>
+                    <div class="h-64 mt-64 hover:bg-social-300 flex justify-center bg-yellow-100 rounded-b-lg">
+                        <img src="/public/image/insta_logo_2.png" alt="" class="object-scale-down">
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+            
+        </main>
+        <section>
+            <div class="p-8 text-center pt-16">
+                <svg class="w-16 h-16 m-auto" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12 1.586l-4 4v12.828l4-4V1.586zM3.707 3.293A1 1 0 002 4v10a1 1 0 00.293.707L6 18.414V5.586L3.707 3.293zM17.707 5.293L14 1.586v12.828l2.293 2.293A1 1 0 0018 16V6a1 1 0 00-.293-.707z" clip-rule="evenodd"></path></svg>
+                <span class="block m-4 p-8 text-2xl">HOW TO GET THERE?</span>
+                <span class="text-lg">Barrio Legina s/n <br>
+                    (Exit 25 Corredor del Txorierri, headed towards the Bilbao airport) <br>
+                    48195 Larrabetzu (Bizkaia)</span>
+
+            </div>
+            <div class="flex justify-center relative">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d922.4765459006884!2d91.81759435875499!3d22.35717098233276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1628240462826!5m2!1sen!2sbd" width="" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="w-full bg-gradient-to-tl from-transparent via-none to-transparent "></iframe>
+                <svg class="w-8 h-16 absolute top-1/2 left-1/2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
+            </div>
+        </section>
+        <footer class="w-full border-t-4 bg-gray-800 p-16 border-secondary-100">
+            <div class="flex justify-center">
+                <a href="www.facebook.com" class="m-2 p-2">
+                    <img src="/public/image/facebook-100x100.png" alt="fb icons" class="w-10 h-10">
+                </a>
+                <a href="www.instagram.com" class="m-2 p-2">
+                    <img src="/public/image/insta-100x100.png" alt="insta icons" class="w-10 h-10">
+                </a>  
+                <a href="www.twitter.com" class="m-2 p-2">
+                    <img src="/public/image/twitter.png" alt="twitter logo" class="w-10 h-10">
+                </a>
+            </div>
+            
+            <div class="text-secondary-200 uppercase w-full text-center">
+                2021-fork mediterranian I <a href="">legal warning</a> I <a href="">cookies policy</a>
+            </div>
+        </footer>
+
+        <script src="/public/nav.js"></script>
     
 </body>
 </html>

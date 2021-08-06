@@ -4,13 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-css": "tailwindcss build -i src/styles.css -o public/styles.css"
+    "build-css": "npx tailwindcss -i ./src/styles.css -o ./public/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/forks007/first_project.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "@tailwindcss/forms": "^0.3.3",
+  "bugs": {
+    "url": "https://github.com/forks007/first_project/issues"
+  },
+  "homepage": "https://github.com/forks007/first_project#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.3.1",
+    "postcss": "^8.3.6",
     "tailwindcss": "^2.2.7"
+  },
+  "dependencies": {
+    "@tailwindcss/forms": "^0.3.3"
   }
 }
